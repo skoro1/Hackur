@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{xifthen}
+\newcommand{\mymacro}{Content of my macro }
+\newcommand{\macroWithArgs}[2]{Applied to #1 and #2!}
+\newcommand{\macroWithDefault}[2][TheDefault]{Applied to #1, the other arg is #2} 
+
+\newcommand{\numn}{\mathbb{N}}
+\newcommand{\numr}{\mathbb{R}}
+\newcommand{\numc}{\mathbb{C}}
+\newcommand{\conc}{\mathcal{C}}
+\newcommand{\continousON}[1]{\conc{}(#1)}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\contDef}[1][{}]{\conc{}(#1)}
+
+\newcommand{\smartCont}[1][{}]{
+\conc{}%
+\ifthenelse{ \equal{#1}{} }
+{} %nothing more needed
+{(#1)}
+}
+
+\begin{document}
+\mymacro{}
+
+\macroWithArgs{\mymacro}{42}
+
+\macroWithDefault{\mymacro}{\emph{not the default}} 
+
+\macroWithDefault[\textbf{overriden by this argument}]
+{\emph{not the default}}
+
+\begin{enumerate}
+    \item Number system : $\numn, \numr ,\numc $
+    \item Continous function: $\conc$
+    \item  Continous on domain $\continousON {\numr{}^2}$, $\continousON{[0,1]}$
+    \item Vectors $\vect{AB}$, $a \vect{x}$
+    \item  Cont with default $\contDef$, $\contDef[\numr]$
+    \item Smart Continous $\smartCont{}$ , $\smartCont[\numc]$
+\end{enumerate}
+
+
+
+
+
+
+\circ
+
+
+\end{document}
