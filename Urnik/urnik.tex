@@ -14,7 +14,7 @@
 \maketitle
 
 
-\begin{abstract}
+\begin{abstract} %povzetek
       V članku so predstavljeni nekateri postopki za avtomatsko izdelavo urnikov. Opisani so
       potrebni vhodni podatki, naštete so omejitve, ki jih je potrebno upoštevati pri izdelavi
       urnikov, predstavljena je tudi metoda merjenja kakovosti izdelanega urnika.
@@ -60,7 +60,7 @@ kasneje tudi obdelati. Te podatke preberemo iz podatkovnih baz ali drugih vrst d
 med katerimi vrh prestola zasedajo XML datoteke. Naslednji primer ponazarja, kako je v
 XML datoteki predstavljen profesor Janez Novak, ki trikrat na teden predava predmet
 matematika.
-%verbatim leva poravnava probs?!?
+%verbatim pusti presledke kakor so
 
 \begin{verbatim}
  <profesor>
@@ -105,7 +105,7 @@ oglejmo. Vsako tabelo določata njena velikost ter tip vrednosti. Naslednji izra
 poda velikost tabele:
 
 \begin{center}
-   velikostTabele = številoUrNaDan · številoDelovnihDni
+   velikostTabele = številoUrNaDan · številoDelovnihDni 
 \end{center}
 Če bi predpostavili, da študijski dan traja od sedme ure zjutraj do osmih zvečer in da
 imamo pet delovnih dni, je velikost naše tabele 65 polj. Velikost te tabele torej pove,
@@ -211,7 +211,10 @@ kršitev omejitve $n$, z $u_n$ pa njeno utež. Z naslednjo formulo izračunamo
 kakovost urnika:
 
   \[ k1 \cdot u1 + k2 \cdot u2 + . . . + kn-1 \cdot un-1 + kn \cdot un \]
-
+  
+\begin{equation}
+   k1 \cdot u1 + k2 \cdot u2 
+\end{equation}
 Nižja vrednost formule pomeni kakovostnejši urnik, izračunamo pa jo na vsakem koraku.
 Korak pri izdelavi urnika predstavlja eno izmed operacij nad njim (označuje njegovo
 spremembo).
