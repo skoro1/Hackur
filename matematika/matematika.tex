@@ -1,0 +1,134 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\newcommand{\bfrac}[2]{\genfrac{(}{)}{0pt}{}{#1}{#2}}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\section{Naloge iz matematike}
+\begin{enumerate}
+    
+
+\item Dokaži, da je enačba $ ( P \bigcap X ) \bigcup ( Q \bigcap X^c ) =  \emptyset $
+rešljiva natanko tedaj, ko je $Q \subseteq P^c $.
+
+\item Pokaži:
+\begin{itemize}
+    \item $M = N \iff M + N = \emptyset $
+    \item $M = N = \emptyset \iff M \bigcup N = \emptyset $
+\end{itemize}
+
+
+\item Ali obstaja tak izjavni izraz $ A $, da bosta izraza
+$ (p \bigwedge A ) \bigvee (p \Rightarrow \neg A )  $ in $ (p \Rightarrow A) \Rightarrow q $
+enakovredna?
+
+\item Dokaži:
+\begin{itemize}
+    \item $(A \Rightarrow B) \sim (\neg B \Rightarrow \neg A )  $
+    \item $ \neg (A \bigvee B) \sim \neg A \bigwedge \neg B $
+\end{itemize}
+
+\item Poišči preneksno obliko formule $ \exists x : P(x) \bigwedge \forall x : Q(x) \Rightarrow \forall x : R(X) $.
+
+\item Vektorja $\vec{c} = \vec{a} + 2\vec{b} $ in $\vec{d} = \vec{a} - \vec{b}$
+sta pravokotna in imata dolžino $1$. Določi kot med vektorjema $\vec{a}$ in $\vec{b}$.
+
+\item Določi definicijsko območje funkcije
+
+    \[ f(x) = log \dfrac{x^2 + 1}{x^2 - 4x + 3} \]
+
+
+\item Izračunaj
+\[ \cos^2 \dfrac{3 \pi}{8} + \cos^2\dfrac{5\pi}{8} + \cos^2\dfrac{7\pi}{8} + \cos^2\dfrac{8\pi}{8} \]
+
+\item Dokaži, da za vsa naravna števila $n$ velja
+\[ \dfrac{1}{\sqrt{1}} + \dfrac{1}{\sqrt{2}} + \dots + \dfrac{1}{\sqrt{n}} \ge \sqrt{n}    \]
+
+\item Naj bo $z$ kompleksno število, $z \neq 1$ in $\mid z \mid = 1$.
+Dokaži, da je število $i \frac{z+1}{z-1}$ realno.
+
+\item Pokaži, da je funkcija $x \mapsto \sqrt{x} $ enakomerno zvezna na $[0,\infty)$.
+
+\item Izračunaj limito
+\[ \lim_{x \to \infty}(\sin\sqrt{x+1} - \sin\sqrt{x}) \]
+
+\item Dani sta grupi $(G,\ast)$ in $(H,\circ)$. V množici $G \times H$ definiramo operacijo
+\[  (g_1,h_1) \cdot (g_2,h_2) = (g_1 \ast g_2,h_1 \circ h_2)       \]
+Pokaži, da je množica $G \times H$ grupa za to operacijo.
+
+\item Pokaži, da ima $f(x) = 3x + \sin(2x)$ inverzno funkcijo in izračunaj $(f^{-1})'(3\pi)$.
+
+\item Izračunaj integral korenske funkcije
+\[\int \dfrac{2 + \sqrt{x + 1}}{(x + 1)^2 - \sqrt{x + 1}}dx \]
+
+\item Krivulja je podana parametrično z enačbama
+\[ x(t) = \int_{1}^{t}\dfrac{\sin u}{u^2}du  \quad y(t) = \int_{1}^{t}\dfrac{\cos u}{u^2}du\] 
+Izračunaj dolžino poti od točke $x = 0$ do točke, v kateri je tangenta prvič navpična.
+
+\item Naj bo $\sum_{n=1}^{\infty} a_n$ absolutno konvergentna vrsta in $a_n \neq 1 $ za $n \in \mathbb{N}  $.
+Dokaži, da sta vrsti
+$$\sum_{n=1}^{\infty} \dfrac{a_n}{1 + a_n} \quad \text{in} \quad \sum_{n=1}^{\infty}\dfrac{a_{n}^{2}}{1 + a_{n}^{2}}$$
+absolutno konvergentni.
+
+\item Funkcijsko zaporedje $f_n : [a,b]\rightarrow [c,d]$ enakomerno konvergira na $[a,d]$ proti funkciji $f$.
+Naj bo $g : [c,d] \Rightarrow \mathbb{R}$ zvezna. Dokaži, da funkcijsko zaporedje $g \circ f_n $
+enakomerno konvergina na $[a,b]$ in določi njegovo limitno funkcijo.
+
+\item Izračunaj limito zaporedja
+\[\lim_{n \to \infty} \dfrac{\sqrt[3]{n^2 + n - 1} + \sqrt[3]{n} + n^2}{2n^2 + \sqrt{n} + 1}   \]  
+
+\item izračunaj
+$ \displaystyle \bfrac{1\quad 2\quad 3\quad 4\quad 5\quad 6}{4\quad 5\quad 2\quad 6\quad 3\quad 1}^{-2000}   $
+
+
+\item Poenostavi
+\[ \dfrac{\dfrac{3 + i}{2 - 2i} + \dfrac{7i}{1 - i}}{1 + \dfrac{i - 1}{4} - \dfrac{5}{2 - 3i}}          \]
+
+\item Za dani zaporedji preveri, ali sta konvergentni
+\[a_n = \underbrace{ \sqrt{2 + \sqrt{2 + \dots + \sqrt{2}}}}_{\text{n korenov}} \quad b_n = \underbrace{\sin(\sin(\dots(\sin 1)\dots))}_{\text{n sinusov}}       \]
+
+\item Ugotovi, ali obstaja
+$$\lim_{y \to 0}y \left \lgroup \dfrac{y + 1 }{y} - \sqrt{\dfrac{y^2 + 1}{y^2}} \right \rgroup $$
+Pomagaj si z limitama funkcije $\dfrac{x + 1 - \sqrt{x^2 + 1}}{x}$ v $-\infty$ in $\infty$.
+
+\item Izračunaj naslednjo determinanto $2n \times 2n$, ki ima na neoznačenih mestih ničle.
+??
+
+\item Dana je funkcija
+??
+Določi parameter ?? tako, da bo ?? zvezna.
+Izračunaj parcialna odvoda ?? in ?? za ??.
+Izračunaj parcialna odvoda ?? in ??.
+Če obstaja, izračunaj limito
+??
+Ali je funkcija ?? diferenciabilna?
+
+Poišči vse rešitve enačbe
+??
+
+Dokaži binomsko formulo: za vsaki realni števili ?? in ?? in za vsako naravno število ?? velja
+??
+
+Naj bo
+??
+Pokaži, da je ?? podgrupa v grupi ??
+neničelnih kompleksnih števil za običajno množenje.
+Pokaži, da je ?? podgrupa v aditivni grupi ??
+ravninskih vektorjev za običajno seštevanje po komponentah.
+Pokaži, da je preslikava ??, podana s pravilom
+??
+izomorfizem grup ?? in ??.
+
+Nariši grafe funkcij:
+??
+
+\end{enumerate}
+\end{document}
