@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \graphicspath{}
+\newtheorem{izrek}{Izrek}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,9 +32,15 @@ Prirejeno iz virov:
 
 \tableofcontents
 \pagebreak
+\begin{izrek}
+   Hello
+\end{izrek}
+\begin{izrek}
+ hello
+\end{izrek}
 \section{Uvod}
 
-   Magični kvadrat reda $n$ je nabor $n^2$ različnih števil,
+   \underline{Magični kvadrat} reda $n$ je nabor $n^2$ različnih števil,
    ki so razvrščena v kvadratno tabelo tako, da vedno dobimo enako vsoto,
    če seštejemo vsa števila poljubne vrstice, vsa števila poljubnega
    stolpca ali vsa števila v katerikoli od glavnih diagonal.
@@ -41,9 +48,15 @@ Prirejeno iz virov:
 Primer magičnega kvadrata reda 3 je prikazan v tabeli ??.
 
 Magični kvadrat reda 3
-%   8 & 1 & 6 \\\hline
-%   3 & 5 & 7 \\\hline
-%   4 & 9 & 2 \\\hline
+\begin{center}
+   \begin{tabular}{|c|c|c|}
+      \hline
+   8 & 1 & 6 \\\hline
+   3 & 5 & 7 \\\hline
+   4 & 9 & 2 \\\hline
+   \end{tabular}
+\end{center}
+
 
    Magični kvadrat reda ?? je normalen, če v njem nastopajo števila
    ??

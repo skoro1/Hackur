@@ -7,12 +7,13 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 \newcommand{\bfrac}[2]{\genfrac{(}{)}{0pt}{}{#1}{#2}}
+\newcommand{\brfrac}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
 
 \pagestyle{empty}
 \begin{document}
 
 
-\section{Naloge iz matematike}
+\section*{Naloge iz matematike}
 \begin{enumerate}
     
 
@@ -103,32 +104,57 @@ Pomagaj si z limitama funkcije $\dfrac{x + 1 - \sqrt{x^2 + 1}}{x}$ v $-\infty$ i
 ??
 
 \item Dana je funkcija
-??
-Določi parameter ?? tako, da bo ?? zvezna.
-Izračunaj parcialna odvoda ?? in ?? za ??.
-Izračunaj parcialna odvoda ?? in ??.
-Če obstaja, izračunaj limito
-??
-Ali je funkcija ?? diferenciabilna?
+\[ f(x,y)=  \Bigg \{ \brfrac{\frac{3x^2 - y - y^3}{x^2 + y^2};}{ a;\hfill}\quad  \brfrac{(x,y) \neq (0,0)}{(x,y)=(0,0)}          \]
+\begin{itemize}
+    \item Določi parameter $a$ tako, da bo $f$ zvezna.
+    \item Izračunaj parcialna odvoda $f_{x}(x,y)$ in $f_{y}(x,y)$ za $(x,y) \neq (0,0)$.
+    \item Izračunaj parcialna odvoda $f_{x}(0,0)$ in $f_{y}(0,0)$. Če obstaja, izračunaj limito
 
-Poišči vse rešitve enačbe
-??
+\[ \lim_{(x,y)\to (0,0)}\dfrac{f(x,y) - f_x (0,0) - f_y (0,0)}{\sqrt{x^2 + y^2}}            \]
+    Ali je funkcija $f$ diferenciabilna?
+\end{itemize}
+\item Poišči vse rešitve enačbe
+\begin{multline*}
+     (1 + x + x^2) \cdot (1 + x + x^2 x^3 + \dots + x^9 + x^{10}) = \\ =(1 + x + x^2 + x^3 + x^4 + x^5 + x^6)^2
+\end{multline*}
+\item Dokaži binomsko formulo: za vsaki realni števili $a$ in $b$ in za vsako naravno število $n$ velja
+%\begin{align*}
+ %   \begin{split}
+ %       (a+b)^n = a^n + na_{n-1}b + \dots + \bfrac{n}{k}a^{n-k}b^k + \dots + nab^{n-1} + b^n \\
+%    \end{split} \\
+  %  \begin{split}
+  %        = \sum_{k=0}^n \bfrac{n}{k}a^{n-k}b^k 
+ %   \end{split}  
+%\end{align*}
+\begin{equation*}
+    \begin{aligned}
+        a+b)^n &= a^n + na_{n-1}b + \dots + \bfrac{n}{k}a^{n-k}b^k + \dots + nab^{n-1} + b^n \\
+         &= \sum_{k=0}^n \bfrac{n}{k}a^{n-k}b^k
+    \end{aligned}
+\end{equation*}
+\item Naj bo
+\begin{equation*}
+    \begin{aligned}
+        &G = \{z \in \mathbb{C}; z=2^k(\cos(m\pi \sqrt{2})+ i\sin(m\pi \sqrt{2})),k,m \in \mathbb{Z}\\
+    &H = \{(x,y) \in \mathbb{R}^2; x,y \in \mathbb{Z}
+    \end{aligned}
+\end{equation*}
+\begin{enumerate}
+    \item Pokaži, da je $G$ podgrupa v grupi $(\mathbb{C}\setminus {0},\cdot)$neničelnih kompleksnih števil za običajno množenje.
+    \item Pokaži, da je $H$ podgrupa v aditivni grupi $(\mathbb{R}^2,+)$ravninskih vektorjev za običajno seštevanje po komponentah.
+    \item Pokaži, da je preslikava $f: H \to G$, podana s pravilom
+    \[ (x,y) \mapsto  2^x(\cos(y\pi \sqrt{2}) + i\sin(y\pi \sqrt{2}))  \]
+    izomorfizem grup ?? in ??.
+\end{enumerate}
 
-Dokaži binomsko formulo: za vsaki realni števili ?? in ?? in za vsako naravno število ?? velja
-??
-
-Naj bo
-??
-Pokaži, da je ?? podgrupa v grupi ??
-neničelnih kompleksnih števil za običajno množenje.
-Pokaži, da je ?? podgrupa v aditivni grupi ??
-ravninskih vektorjev za običajno seštevanje po komponentah.
-Pokaži, da je preslikava ??, podana s pravilom
-??
-izomorfizem grup ?? in ??.
-
-Nariši grafe funkcij:
-??
+\item Nariši grafe funkcij:
+ \begin{equation*}
+    \begin{aligned}
+        &y=x^2 - 3|x| + 2 &  &y=3\sin(\pi + x) - 2 \\
+        &y=\log_2 (x - 2) + 3 & &y= 2\sqrt{x^2 + 15} + 6 \\
+        &y=2^{x-3} & &y=\cos(x - 3) + sin^2(x+1)  
+    \end{aligned}
+ \end{equation*}             
 
 \end{enumerate}
 \end{document}
